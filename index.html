@@ -227,6 +227,13 @@ const SKILLS = {
 };
 
 const EXP = [
+  { company:"SANAD Partners", role:"Contract Software Engineer", period:"May 2026 – Present", location:"Cairo, Egypt",
+    hl:["Built a finance ticketing platform for SANAD Partners and 5 subsidiaries handling end-to-end bank transfer requests — submission, approval routing, execution tracking, and receipt capture",
+        "Designed a 4-variant workflow state machine (approval + OTP, approval only, OTP only, straight-through) configurable per company via admin-set flags",
+        "Modeled a multi-role system (Requester, Approver, Accountant, Admin) with company-scoped assignments and cross-company accountant queue across all 6 entities",
+        "Implemented immutable audit trail with database-level UPDATE/DELETE revocation — every state transition, file access, and auth event logged with actor, role, IP, and timestamp",
+        "Enforced Segregation of Duties at the data layer with auditable exceptions (self-approval opt-in, dual-role finance users) — each flagged and queryable in one filter",
+        "Integrated event-driven notifications via Resend (email) on every lifecycle transition with graceful fallback on delivery failure"]},
   { company:"Studentgator", role:"AI Engineer / Data Scientist", period:"Aug 2025 – Present", location:"Cairo, Egypt",
     hl:["Migrated vector store to Qdrant — 40% query latency reduction with improved collection management",
         "Implemented hybrid search boosting document retrieval accuracy by 50%",
